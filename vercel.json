@@ -86,11 +86,6 @@
       "INLINE_RUNTIME_CHUNK": "false"
     }
   },
-  "functions": {
-    "app/build/static/js/*.js": {
-      "maxDuration": 30
-    }
-  },
   "regions": ["iad1"],
   "framework": "create-react-app"
 }
