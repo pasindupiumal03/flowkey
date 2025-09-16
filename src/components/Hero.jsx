@@ -83,12 +83,12 @@ const Hero = () => {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-xl text-gray-300 mb-12 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+        <p className="text-xl text-gray-300 mb-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
           {hero.subtitle}
         </p>
 
         {/* CTA Button */}
-        <div className=" mb-16 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+        <div className="mb-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
           <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-4 text-lg rounded-lg btn-glow hover-lift transition-all duration-300 flex items-center space-x-3 mx-auto">
             <Download className="w-5 h-5" />
             <span>Install Extension</span>
@@ -96,15 +96,11 @@ const Hero = () => {
         </div>
 
         {/* Browser Extension Mockup */}
-        <div className="relative max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-          <div className="glass-effect rounded-xl p-6 hover-lift">
-            <img 
-              src="/Flowkey_1.png" 
-              alt="FlowKey Browser Extension Preview" 
-              className="w-full h-auto rounded-lg shadow-2xl transition-transform duration-300 hover:-translate-y-2 hover:shadow-purple-500/25"
-            />
-          </div>
-        </div>
+        <img 
+          src="/Flowkey_1.png" 
+          alt="FlowKey Browser Extension Preview" 
+          className="max-w-6xl mx-auto w-full h-auto"
+        />
       </div>
     </section>
   );
