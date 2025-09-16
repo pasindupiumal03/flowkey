@@ -19,14 +19,18 @@ const Footer = () => {
           {/* Center Icons */}
           <div className="flex items-center justify-center space-x-4">
             <a 
-              href="#twitter" 
+              href="https://x.com/flowkeydotsh" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-400 hover:text-red-400 transition-colors duration-200 flex items-center justify-center"
               aria-label="Twitter"
             >
               <Twitter className="w-5 h-5" />
             </a>
             <a 
-              href="#github" 
+              href="https://github.com/pasindupiumal03/flowkey" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center justify-center"
               aria-label="GitHub"
             >

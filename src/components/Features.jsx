@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { Button } from "./ui/button";
-import { Bookmark, Layout, Zap, Download } from "lucide-react";
+import { Bookmark, Layout, Zap, Download, ChevronRight } from "lucide-react";
 import { mockData } from "../data/mock";
 
 const Features = () => {
   const { features } = mockData;
   const [hoveredFeature, setHoveredFeature] = useState(null);
+  const [activeFeature, setActiveFeature] = useState(0);
 
   // Image mapping for each feature
   const featureImages = {
@@ -33,24 +34,46 @@ const Features = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Left side - Features List */}
-          <div className="space-y-8">
+        {/* Interactive Features Grid */}
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
+          {/* Left side - Feature Cards */}
+          <div className="space-y-4">
             {features.map((feature, index) => (
               <div 
                 key={index} 
-                className="flex items-start space-x-4 hover-lift cursor-pointer"
-                onMouseEnter={() => setHoveredFeature(index)}
-                onMouseLeave={() => setHoveredFeature(null)}
+                className={`group relative p-6 rounded-2xl border transition-all duration-300 cursor-pointer ${
+                  activeFeature === index 
+                    ? 'bg-gradient-to-r from-purple-600/20 to-blue-600/20 border-purple-500/50 shadow-xl shadow-purple-500/10' 
+                    : 'bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20'
+                }`}
+                onClick={() => setActiveFeature(index)}
+                onMouseEnter={() => setActiveFeature(index)}
               >
-                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg flex items-center justify-center">
-                  {feature.icon === 'bookmark' && <Bookmark className="w-6 h-6 text-white" />}
-                  {feature.icon === 'layout' && <Layout className="w-6 h-6 text-white" />}
-                  {feature.icon === 'zap' && <Zap className="w-6 h-6 text-white" />}
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">{feature.title}</h3>
-                  <p className="text-gray-400 leading-relaxed">{feature.description}</p>
+                {/* Active indicator */}
+                <div className={`absolute left-0 top-6 bottom-6 w-1 bg-gradient-to-b from-purple-600 to-blue-600 rounded-r-full transition-opacity duration-300 ${
+                  activeFeature === index ? 'opacity-100' : 'opacity-0'
+                }`}></div>
+                
+                {/* Feature Icon & Content */}
+                <div className="flex items-start space-x-4">
+                  <div className={`flex-shrink-0 w-14 h-14 rounded-xl flex items-center justify-center transition-all duration-300 ${
+                    activeFeature === index 
+                      ? 'bg-gradient-to-r from-purple-600 to-blue-600 shadow-lg shadow-purple-500/25' 
+                      : 'bg-white/10 group-hover:bg-white/20'
+                  }`}>
+                    {feature.icon === 'bookmark' && <Bookmark className="w-6 h-6 text-white" />}
+                    {feature.icon === 'layout' && <Layout className="w-6 h-6 text-white" />}
+                    {feature.icon === 'zap' && <Zap className="w-6 h-6 text-white" />}
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-white mb-2">{feature.title}</h3>
+                    <p className="text-gray-400 leading-relaxed">{feature.description}</p>
+                  </div>
+                  <ChevronRight className={`w-5 h-5 transition-all duration-300 ${
+                    activeFeature === index 
+                      ? 'text-purple-400 translate-x-1' 
+                      : 'text-gray-500 group-hover:text-gray-400 group-hover:translate-x-0.5'
+                  }`} />
                 </div>
               </div>
             ))}
@@ -59,9 +82,9 @@ const Features = () => {
           {/* Right side - App Interface Mockup */}
           <div className="glass-effect rounded-xl p-6 hover-lift">
             <img 
-              src={hoveredFeature !== null ? featureImages[hoveredFeature] : defaultImage}
+              src={activeFeature !== null ? featureImages[activeFeature] : defaultImage}
               alt="FlowKey Browser Extension Preview" 
-              className="w-full h-auto rounded-lg shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-purple-500/25"
+              className="w-3/4 h-auto mx-auto rounded-lg shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-purple-500/25"
             />
           </div>
         </div>
