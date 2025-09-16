@@ -33,7 +33,10 @@ const Header = () => {
         </nav>
 
         {/* CTA Button */}
-        <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-6 py-2 rounded-full btn-glow transition-all duration-300 flex items-center space-x-2">
+        <Button 
+          className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-6 py-2 rounded-full btn-glow transition-all duration-300 flex items-center space-x-2"
+          onClick={() => window.open('https://chromewebstore.google.com/detail/flwkey/gnoldbjnnjpmomkeefiaihihaomegaok', '_blank')}
+        >
           <ExternalLink className="w-4 h-4" />
           <span>Open Extension</span>
         </Button>
