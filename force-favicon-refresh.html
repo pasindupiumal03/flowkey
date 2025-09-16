@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Force Favicon Refresh - FlowKey</title>
+    <script>
+        // Force favicon refresh by dynamically updating the link
+        function refreshFavicon() {
+            const links = document.querySelectorAll("link[rel*='icon']");
+            links.forEach(link => {
+                const href = link.href.split('?')[0]; // Remove existing query params
+                link.href = href + '?v=' + new Date().getTime(); // Add timestamp
+            });
+            alert('Favicon links updated with cache-busting parameters!');
+        }
+    </script>
+</head>
+<body>
+    <h1>FlowKey Favicon Refresh Tool</h1>
+    <p>If your browser is still showing the old favicon, use one of these methods:</p>
+    
+    <h2>Method 1: Browser Actions</h2>
+    <ol>
+        <li><strong>Hard Refresh:</strong> Press <kbd>Ctrl + F5</kbd> or <kbd>Ctrl + Shift + R</kbd></li>
+        <li><strong>Clear Cache:</strong> Press <kbd>F12</kbd> → Network tab → Right-click Reload → "Empty Cache and Hard Reload"</li>
+        <li><strong>Private/Incognito:</strong> Open your site in a private/incognito window</li>
+        <li><strong>Different Browser:</strong> Try opening in Edge, Firefox, or another browser</li>
+    </ol>
+    
+    <h2>Method 2: Direct Favicon URLs</h2>
+    <p>Open these URLs directly to see the new icons:</p>
+    <ul>
+        <li><a href="http://localhost:3000/favicon.ico?v=2024" target="_blank">http://localhost:3000/favicon.ico?v=2024</a></li>
+        <li><a href="http://localhost:3000/favicon-32x32.png?v=2024" target="_blank">http://localhost:3000/favicon-32x32.png?v=2024</a></li>
+        <li><a href="http://localhost:3000/apple-touch-icon.png?v=2024" target="_blank">http://localhost:3000/apple-touch-icon.png?v=2024</a></li>
+    </ul>
+    
+    <h2>Method 3: JavaScript Force Refresh</h2>
+    <button onclick="refreshFavicon()" style="padding: 10px 20px; font-size: 16px; background: #7c3aed; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        Force Refresh Favicon
+    </button>
+    
+    <h2>Verification</h2>
+    <p>After trying the methods above, go to <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> and check:</p>
+    <ul>
+        <li>The browser tab icon</li>
+        <li>Bookmark icon (if you bookmark the page)</li>
+        <li>Browser history icon</li>
+    </ul>
+    
+    <p><strong>Note:</strong> Some browsers cache favicons very aggressively. If none of the above work, try restarting your browser completely.</p>
+</body>
+</html>

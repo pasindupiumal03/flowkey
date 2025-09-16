@@ -88,7 +88,7 @@ const Hero = () => {
         </p>
 
         {/* CTA Button */}
-        <div className="mb-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+        <div className="mb-12 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
           <Button 
             className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-4 text-lg rounded-lg btn-glow hover-lift transition-all duration-300 flex items-center space-x-3 mx-auto"
             onClick={() => window.open('https://chromewebstore.google.com/detail/flwkey/gnoldbjnnjpmomkeefiaihihaomegaok', '_blank')}
@@ -102,7 +102,7 @@ const Hero = () => {
         <img 
           src="/Flowkey_1.png" 
           alt="FlowKey Browser Extension Preview" 
-          className="max-w-6xl mx-auto w-full h-auto"
+          className="max-w-4xl mx-auto w-full h-auto  opacity-70 brightness-75"
         />
       </div>
     </section>
