@@ -1,8 +1,30 @@
 import React from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
 import { ExternalLink } from "lucide-react";
 
 const Header = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleSectionNavigation = (sectionId) => {
+    if (location.pathname === '/') {
+      // If on home page, scroll to section
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // If on different page, navigate to home then scroll
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  };
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass-effect">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -18,18 +40,27 @@ const Header = () => {
 
         {/* Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#about" className="text-gray-300 hover:text-white transition-colors duration-200">
+          <button 
+            onClick={() => handleSectionNavigation('features')}
+            className="text-gray-300 hover:text-white transition-colors duration-200 cursor-pointer"
+          >
             About
-          </a>
-          <a href="#github" className="text-gray-300 hover:text-white transition-colors duration-200">
+          </button>
+          <button 
+            onClick={() => handleSectionNavigation('opensource')}
+            className="text-gray-300 hover:text-white transition-colors duration-200 cursor-pointer"
+          >
             GitHub
-          </a>
-          <a href="#faq" className="text-gray-300 hover:text-white transition-colors duration-200">
+          </button>
+          <button 
+            onClick={() => handleSectionNavigation('faq')}
+            className="text-gray-300 hover:text-white transition-colors duration-200 cursor-pointer"
+          >
             FAQ
-          </a>
-          <a href="#access" className="text-gray-300 hover:text-white transition-colors duration-200">
-            How to Access
-          </a>
+          </button>
+          <Link to="/extension" className="text-gray-300 hover:text-white transition-colors duration-200">
+            Our Extension
+          </Link>
         </nav>
 
         {/* CTA Button */}

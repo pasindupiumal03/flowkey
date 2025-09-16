@@ -7,6 +7,7 @@ import Features from "./components/Features";
 import OpenSource from "./components/OpenSource";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
+import Extension from "./pages/Extension";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
               <Footer />
             </div>
           } />
+          <Route path="/extension" element={<Extension />} />
         </Routes>
       </BrowserRouter>
     </div>
