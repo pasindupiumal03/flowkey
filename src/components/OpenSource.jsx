@@ -4,7 +4,7 @@ import { Github } from "lucide-react";
 
 const OpenSource = () => {
   return (
-    <section className="py-20 px-6">
+    <section id="opensource" className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}

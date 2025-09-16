@@ -18,7 +18,7 @@ const Features = () => {
   const defaultImage = "/Flowkey_2.png";
 
   return (
-    <section className="py-20 px-6">
+    <section id="features" className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
