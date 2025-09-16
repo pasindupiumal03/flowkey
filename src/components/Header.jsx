@@ -29,14 +29,14 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 glass-effect">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center space-x-3">
+        <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-200">
           <img 
             src="/flowkey_icon.jpeg" 
             alt="FlowKey Logo" 
             className="w-10 h-10 rounded-lg object-cover"
           />
           <span className="text-white font-semibold text-xl">FlowKey</span>
-        </div>
+        </Link>
 
         {/* Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
