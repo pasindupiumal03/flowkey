@@ -2,6 +2,8 @@ import React from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
 import { ExternalLink } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
+
 
 const Header = () => {
   const location = useLocation();
@@ -63,14 +65,28 @@ const Header = () => {
           </Link>
         </nav>
 
-        {/* CTA Button */}
-        <Button 
-          className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-6 py-2 rounded-full btn-glow transition-all duration-300 flex items-center space-x-2"
-          onClick={() => window.open('https://chromewebstore.google.com/detail/flwkey/gnoldbjnnjpmomkeefiaihihaomegaok', '_blank')}
-        >
-          <ExternalLink className="w-4 h-4" />
-          <span>Open Extension</span>
-        </Button>
+        {/* CTA Section */}
+        <div className="flex items-center space-x-4">
+          {/* Twitter Button */}
+          <a
+            href="https://x.com/flowkeydotsh"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300 group"
+            aria-label="Follow on Twitter"
+          >
+            <FaXTwitter className="w-5 h-5 text-gray-300 group-hover:text-white transition-colors duration-300" />
+          </a>
+
+          {/* Open Extension Button */}
+          <Button 
+            className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-6 py-2 rounded-full btn-glow transition-all duration-300 flex items-center space-x-2"
+            onClick={() => window.open('https://chromewebstore.google.com/detail/flwkey/gnoldbjnnjpmomkeefiaihihaomegaok', '_blank')}
+          >
+            <ExternalLink className="w-4 h-4" />
+            <span>Open Extension</span>
+          </Button>
+        </div>
       </div>
     </header>
   );
