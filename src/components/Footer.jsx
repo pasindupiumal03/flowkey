@@ -1,5 +1,6 @@
 import React from "react";
-import { FaXTwitter, FaGithub } from "react-icons/fa6";
+import { FaXTwitter, FaGithub} from "react-icons/fa6";
+import { IoMailUnread } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -36,6 +37,15 @@ const Footer = () => {
               aria-label="GitHub"
             >
               <FaGithub className="w-5 h-5" />
+            </a>
+            <a 
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@flowkey.sh" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center justify-center"
+              aria-label="Mail"
+            >
+              <IoMailUnread className="w-5 h-5" />
             </a>
           </div>
 
