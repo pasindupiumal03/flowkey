@@ -1,5 +1,6 @@
 import React from "react";
-import { Github, Twitter } from "lucide-react";
+import { FaXTwitter, FaGithub } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -22,10 +23,10 @@ const Footer = () => {
               href="https://x.com/flowkeydotsh" 
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-red-400 transition-colors duration-200 flex items-center justify-center"
+              className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center justify-center"
               aria-label="Twitter"
             >
-              <Twitter className="w-5 h-5" />
+              <FaXTwitter className="w-5 h-5" />
             </a>
             <a 
               href="https://github.com/pasindupiumal03/flowkey" 
@@ -34,18 +35,24 @@ const Footer = () => {
               className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center justify-center"
               aria-label="GitHub"
             >
-              <Github className="w-5 h-5" />
+              <FaGithub className="w-5 h-5" />
             </a>
           </div>
 
           {/* Right side - Privacy and Copyright */}
           <div className="flex items-center space-x-6 text-sm text-gray-400">
-            <a 
-              href="#privacy" 
+            <Link 
+              to="/privacy" 
               className="hover:text-white transition-colors duration-200"
             >
               Privacy Policy
-            </a>
+            </Link>
+            <Link 
+              to="/contact" 
+              className="hover:text-white transition-colors duration-200"
+            >
+              Contact Us
+            </Link>
             <span>© 2025 FlowKey. All rights reserved.</span>
           </div>
         </div>

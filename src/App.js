@@ -8,6 +8,8 @@ import OpenSource from "./components/OpenSource";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import Extension from "./pages/Extension";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
             </div>
           } />
           <Route path="/extension" element={<Extension />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
       </BrowserRouter>
     </div>
