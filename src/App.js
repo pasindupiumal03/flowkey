@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
+import TokenAccess from "./components/TokenAccess";
 import OpenSource from "./components/OpenSource";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
@@ -24,6 +25,7 @@ function App() {
               <Header />
               <Hero />
               <Features />
+              <TokenAccess />
               <OpenSource />
               <FAQ />
               <Footer />

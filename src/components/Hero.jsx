@@ -216,7 +216,7 @@ const Hero = () => {
         <img 
           src="/Flowkey_1.png" 
           alt="FlowKey Browser Extension Preview" 
-          className="max-w-4xl mx-auto w-full h-auto  opacity-70 brightness-75"
+          className="max-w-4xl mx-auto w-full h-auto"
         />
       </div>
     </section>
