@@ -6,7 +6,36 @@ const TokenAccess = () => {
   const [activeCard, setActiveCard] = useState(1); // Start with Access Granted active
 
   return (
-    <section id="token-access" className="py-20 px-6">
+    <>
+      <style jsx>{`
+        @keyframes upDown {
+          0%, 100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-20px);
+          }
+        }
+        
+        @keyframes downUp {
+          0%, 100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(20px);
+          }
+        }
+        
+        .up-down {
+          animation: upDown 7s infinite ease-in-out;
+        }
+        
+        .down-up {
+          animation: downUp 7s infinite ease-in-out;
+        }
+      `}</style>
+      
+      <section id="token-access" className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -28,7 +57,7 @@ const TokenAccess = () => {
           <div className="flex justify-center mb-8 relative">
             <div className="relative w-full max-w-4xl h-96">
               {/* Card 1 - Access Denied (Left) */}
-              <div className="absolute left-[14%] top-[15%] w-64" style={{ animation: 'bounce 3s infinite' }}>
+              <div className="absolute left-[14%] top-[15%] w-64 up-down">
                 <img 
                   src="/card-1.svg" 
                   alt="Access Denied Card" 
@@ -59,7 +88,7 @@ const TokenAccess = () => {
               </div>
               
               {/* Card 3 - Additional Info (Left Bottom) */}
-              <div className="absolute left-[19%] bottom-8 w-64" style={{ animation: 'bounce 3s infinite', animationDelay: '1s' }}>
+              <div className="absolute left-[19%] bottom-8 w-64 down-up">
                 <img 
                   src="/card-3.svg" 
                   alt="Token Info Card" 
@@ -82,6 +111,7 @@ const TokenAccess = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
