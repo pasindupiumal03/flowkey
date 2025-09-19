@@ -214,7 +214,7 @@ const Hero = () => {
 
         {/* Browser Extension Mockup */}
         <img 
-          src="/Flowkey_1.png" 
+          src="/Flowkey_1.svg" 
           alt="FlowKey Browser Extension Preview" 
           className="max-w-4xl mx-auto w-full h-auto"
         />
