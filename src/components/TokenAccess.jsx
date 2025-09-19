@@ -24,17 +24,48 @@ const TokenAccess = () => {
             Your wallet is your license — nothing else needed
           </p>
           
-          {/* Coin Image */}
+          {/* Token Visualization with Cards */}
           <div className="flex justify-center mb-8 relative">
-            <div className="relative">
-              <img 
-                src="/coin.png" 
-                alt="FlowKey Token" 
-                className="w-full h-full"
-              />
-              {/* Dark vignette overlay */}
-              <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-60"></div>
-              <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black opacity-40"></div>
+            <div className="relative w-full max-w-4xl h-96">
+              {/* Card 1 - Access Denied (Left) */}
+              <div className="absolute left-[14%] top-[15%] w-64" style={{ animation: 'bounce 3s infinite' }}>
+                <img 
+                  src="/card-1.svg" 
+                  alt="Access Denied Card" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              
+              {/* Central Coin - Larger and More Prominent */}
+              <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
+                <div className="relative">
+                  {/* Glowing background effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-purple-600/30 to-blue-600/30 rounded-full blur-3xl scale-150"></div>
+                  <img 
+                    src="/Coin-only.png" 
+                    alt="FlowKey Token" 
+                    className="relative w-[100%] h-[100%] object-contain transform hover:rotate-12 transition-all duration-500"
+                  />
+                </div>
+              </div>
+              
+              {/* Card 2 - Access Granted (Right Center) */}
+              <div className="absolute right-[12%] top-1/2 transform -translate-y-1/2 w-64 z-30" style={{ animation: 'pulse 4s infinite' }}>
+                <img 
+                  src="/card-2.svg" 
+                  alt="Access Granted Card" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              
+              {/* Card 3 - Additional Info (Left Bottom) */}
+              <div className="absolute left-[19%] bottom-8 w-64" style={{ animation: 'bounce 3s infinite', animationDelay: '1s' }}>
+                <img 
+                  src="/card-3.svg" 
+                  alt="Token Info Card" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>
