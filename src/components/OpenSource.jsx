@@ -29,7 +29,7 @@ const OpenSource = () => {
             </p>
             <Button 
               className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-4 text-lg rounded-lg hover-lift transition-all duration-300 border border-gray-600 hover:border-gray-500"
-              onClick={() => window.open('https://github.com/pasindupiumal03/flowkey', '_blank')}
+              onClick={() => window.open('https://github.com/FlowKeyCE/FlowKey-Chrome-Extension', '_blank')}
             >
               <Github className="w-5 h-5 mr-3" />
               Open GitHub

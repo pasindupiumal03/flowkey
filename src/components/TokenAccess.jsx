@@ -49,7 +49,7 @@ const TokenAccess = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Hold at least 0.2% of the $FLK supply to unlock the app.<br />
+            Hold at least 0.2% of the $FLOWKEY supply to unlock the app.<br />
             Your wallet is your license — nothing else needed
           </p>
           
@@ -103,7 +103,7 @@ const TokenAccess = () => {
           <Button 
             className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-4 text-lg rounded-lg btn-glow hover-lift transition-all duration-300 flex items-center space-x-3 mx-auto"
           >
-            <span>Buy $FLK</span>
+            <span>Buy $FLOWKEY</span>
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
