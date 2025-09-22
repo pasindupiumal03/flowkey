@@ -12,11 +12,11 @@ const Features = () => {
   const featureImages = {
     0: "/Flowkey_2_svg.svg", // Add any site to bookmarks
     1: "/Flowkey_3_svg.svg", // Open instant your workspace
-    2: "/Flowkey_4.png", // Build your layout
+    2: "/Flowkey_4_svg.svg", // Build your layout
   };
 
   // Default image when no feature is hovered
-  const defaultImage = "/Flowkey_2.png";
+  const defaultImage = "/Flowkey_2_svg.svg";
 
   return (
     <section id="features" className="py-20 px-6">
