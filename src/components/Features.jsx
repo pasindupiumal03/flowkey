@@ -10,8 +10,8 @@ const Features = () => {
 
   // Image mapping for each feature
   const featureImages = {
-    0: "/Flowkey_2.png", // Add any site to bookmarks
-    1: "/Flowkey_3.png", // Open instant your workspace
+    0: "/Flowkey_2_svg.svg", // Add any site to bookmarks
+    1: "/Flowkey_3_svg.svg", // Open instant your workspace
     2: "/Flowkey_4.png", // Build your layout
   };
 
