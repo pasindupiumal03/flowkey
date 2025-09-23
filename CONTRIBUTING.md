@@ -329,7 +329,7 @@ Contributors will be:
 Need help contributing? Reach out:
 
 - **💬 Discussions**: Use GitHub Discussions for questions
-- **📧 Email**: [contact@flowkey.sh](mailto:contact@flowkey.sh)
+- **📧 Email**: [ hello@flowkey.sh](mailto: hello@flowkey.sh)
 - **🐦 Twitter**: [@flowkeydotsh](https://x.com/flowkeydotsh)
 
 ## 📚 Resources

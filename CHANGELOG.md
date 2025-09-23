@@ -61,7 +61,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 #### 📞 Communication Channels
 - **Multiple Contact Options**: Form, email, and social media
-- **Professional Email**: contact@flowkey.sh setup
+- **Professional Email**:  hello@flowkey.sh setup
 - **Social Media Presence**: Twitter (@flowkeydotsh) integration
 - **GitHub Repository**: Open source with proper documentation
 
@@ -150,7 +150,7 @@ Migration guides will be provided for any breaking changes in future versions.
 ### 🐛 Found a Bug?
 - Check [existing issues](https://github.com/pasindupiumal03/flowkey/issues)
 - Create a [new issue](https://github.com/pasindupiumal03/flowkey/issues/new) with details
-- Email us at [contact@flowkey.sh](mailto:contact@flowkey.sh)
+- Email us at [ hello@flowkey.sh](mailto: hello@flowkey.sh)
 
 ### 💡 Have a Feature Request?
 - Use our [contact form](https://flowkey.sh/contact)

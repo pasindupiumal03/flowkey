@@ -247,7 +247,7 @@ See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
 
 Need help? We've got you covered:
 
-- **📧 Email**: [contact@flowkey.sh](mailto:contact@flowkey.sh)
+- **📧 Email**: [ hello@flowkey.sh](mailto: hello@flowkey.sh)
 - **📝 Contact Form**: [flowkey.sh/contact](https://flowkey.sh/contact)
 - **🐛 Issues**: [GitHub Issues](https://github.com/pasindupiumal03/flowkey/issues)
 - **🐦 Twitter**: [@flowkeydotsh](https://x.com/flowkeydotsh)
@@ -282,6 +282,6 @@ If you like FlowKey, please consider:
 
 **Made with ❤️ by the FlowKey Team**
 
-[Website](https://flowkey.sh) • [Extension](https://chromewebstore.google.com/detail/flwkey/gnoldbjnnjpmomkeefiaihihaomegaok) • [Twitter](https://x.com/flowkeydotsh) • [Contact](mailto:contact@flowkey.sh)
+[Website](https://flowkey.sh) • [Extension](https://chromewebstore.google.com/detail/flwkey/gnoldbjnnjpmomkeefiaihihaomegaok) • [Twitter](https://x.com/flowkeydotsh) • [Contact](mailto: hello@flowkey.sh)
 
 </div>

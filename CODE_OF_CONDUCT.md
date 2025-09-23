@@ -52,7 +52,7 @@ Examples of representing our community include:
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at:
 
-**📧 Email**: [contact@flowkey.sh](mailto:contact@flowkey.sh)
+**📧 Email**: [ hello@flowkey.sh](mailto: hello@flowkey.sh)
 **🐦 Twitter**: [@flowkeydotsh](https://x.com/flowkeydotsh)
 
 All complaints will be:
@@ -138,7 +138,7 @@ We believe in:
 - Check our [Contributing Guide](CONTRIBUTING.md)
 - Read the [README](README.md) for project information
 - Join discussions in GitHub Issues
-- Contact us at [contact@flowkey.sh](mailto:contact@flowkey.sh)
+- Contact us at [ hello@flowkey.sh](mailto: hello@flowkey.sh)
 
 ### 🔗 **Additional Resources**
 - [GitHub Community Guidelines](https://docs.github.com/en/site-policy/github-terms/github-community-guidelines)

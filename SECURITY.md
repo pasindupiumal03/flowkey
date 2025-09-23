@@ -10,7 +10,7 @@ FlowKey takes security seriously. We appreciate your efforts to responsibly disc
 
 Instead, please report security vulnerabilities via:
 
-- **Email**: [contact@flowkey.sh](mailto:contact@flowkey.sh)
+- **Email**: [ hello@flowkey.sh](mailto: hello@flowkey.sh)
 - **Subject Line**: "Security Vulnerability Report - [Brief Description]"
 
 ### 📋 What to Include
@@ -156,7 +156,7 @@ We appreciate security researchers and will:
 
 In case of active security incidents:
 
-1. **Immediate Response**: Contact us immediately at [contact@flowkey.sh](mailto:contact@flowkey.sh)
+1. **Immediate Response**: Contact us immediately at [ hello@flowkey.sh](mailto: hello@flowkey.sh)
 2. **Severity Assessment**: We'll assess and prioritize based on impact
 3. **Rapid Deployment**: Critical fixes deployed within hours if needed
 4. **User Notification**: Users notified through appropriate channels
@@ -172,7 +172,7 @@ Security updates are:
 
 ## 📞 Contact Information
 
-**Security Team**: [contact@flowkey.sh](mailto:contact@flowkey.sh)
+**Security Team**: [ hello@flowkey.sh](mailto: hello@flowkey.sh)
 **Twitter**: [@flowkeydotsh](https://x.com/flowkeydotsh)
 **GitHub**: [github.com/pasindupiumal03/flowkey](https://github.com/pasindupiumal03/flowkey)
 
