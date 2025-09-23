@@ -130,10 +130,10 @@ const PrivacyPolicy = () => {
               <div className="flex items-center space-x-3 bg-blue-600/10 border border-blue-500/20 rounded-lg p-4">
                 <Mail className="w-5 h-5 text-blue-400" />
                 <a 
-                  href="mailto:contact@flowkey.sh" 
+                  href="mailto: hello@flowkey.sh" 
                   className="text-blue-400 hover:text-blue-300 transition-colors"
                 >
-                  contact@flowkey.sh
+                   hello@flowkey.sh
                 </a>
               </div>
             </div>

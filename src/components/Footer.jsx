@@ -58,7 +58,7 @@ const Footer = () => {
               <FaGithub className="w-5 h-5" />
             </a>
             <a 
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@flowkey.sh" 
+              href="https://mail.google.com/mail/?view=cm&fs=1&to= hello@flowkey.sh" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center justify-center"

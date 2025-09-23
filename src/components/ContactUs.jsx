@@ -224,10 +224,10 @@ const ContactUs = () => {
                 <div className="flex items-center justify-center space-x-3 text-gray-300">
                   <Mail className="w-5 h-5 text-blue-400" />
                   <a 
-                    href="mailto:contact@flowkey.sh" 
+                    href="mailto: hello@flowkey.sh" 
                     className="text-blue-400 hover:text-blue-300 transition-colors text-lg"
                   >
-                    contact@flowkey.sh
+                     hello@flowkey.sh
                   </a>
                 </div>
                 <p className="text-gray-400 mt-4">
