@@ -205,7 +205,7 @@ const Hero = () => {
         <div className="mb-12 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
           <Button 
             className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-4 text-lg rounded-lg btn-glow hover-lift transition-all duration-300 flex items-center space-x-3 mx-auto"
-            onClick={() => window.open('https://chromewebstore.google.com/detail/flwkey/gnoldbjnnjpmomkeefiaihihaomegaok', '_blank')}
+            onClick={() => window.open('https://chromewebstore.google.com/detail/flowkey-bookmark-layout-m/lpgjlhajnhhdbaleigdkeloeeniedpnj', '_blank')}
           >
             <Download className="w-5 h-5" />
             <span>Install Extension</span>

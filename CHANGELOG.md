@@ -112,7 +112,7 @@ FlowKey's first major release brings together a beautiful website and powerful C
 
 **🚀 Getting Started:**
 1. Visit [flowkey.sh](https://flowkey.sh)
-2. Install the [Chrome Extension](https://chromewebstore.google.com/detail/flwkey/gnoldbjnnjpmomkeefiaihihaomegaok)
+2. Install the [Chrome Extension](https://chromewebstore.google.com/detail/flowkey-bookmark-layout-m/lpgjlhajnhhdbaleigdkeloeeniedpnj)
 3. Connect your Phantom wallet
 4. Start organizing your browsing experience!
 
