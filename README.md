@@ -9,10 +9,10 @@
   
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   [![React](https://img.shields.io/badge/React-19.0.0-61DAFB?logo=react)](https://reactjs.org/)
-  [![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-4285F4?logo=googlechrome)](https://chromewebstore.google.com/detail/flwkey/gnoldbjnnjpmomkeefiaihihaomegaok)
+  [![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-4285F4?logo=googlechrome)](https://chromewebstore.google.com/detail/flowkey-bookmark-layout-m/lpgjlhajnhhdbaleigdkeloeeniedpnj)
   [![Website](https://img.shields.io/badge/Website-flowkey.sh-7c3aed)](https://flowkey.sh)
   
-  [🚀 Live Demo](https://flowkey.sh) • [📥 Install Extension](https://chromewebstore.google.com/detail/flwkey/gnoldbjnnjpmomkeefiaihihaomegaok) • [📖 Documentation](docs/README.md)
+  [🚀 Live Demo](https://flowkey.sh) • [📥 Install Extension](https://chromewebstore.google.com/detail/flowkey-bookmark-layout-m/lpgjlhajnhhdbaleigdkeloeeniedpnj) • [📖 Documentation](docs/README.md)
 </div>
 
 ---
@@ -45,7 +45,7 @@
 Experience FlowKey in action:
 
 - **🌐 Website**: [flowkey.sh](https://flowkey.sh)
-- **📥 Chrome Extension**: [Chrome Web Store](https://chromewebstore.google.com/detail/flwkey/gnoldbjnnjpmomkeefiaihihaomegaok)
+- **📥 Chrome Extension**: [Chrome Web Store](https://chromewebstore.google.com/detail/flowkey-bookmark-layout-m/lpgjlhajnhhdbaleigdkeloeeniedpnj)
 - **🐦 Twitter**: [@flowkeydotsh](https://x.com/flowkeydotsh)
 
 ---
@@ -277,11 +277,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you like FlowKey, please consider:
 - ⭐ **Starring this repository**
 - 🐦 **Following us on [Twitter](https://x.com/flowkeydotsh)**
-- 📥 **Installing our [Chrome Extension](https://chromewebstore.google.com/detail/flwkey/gnoldbjnnjpmomkeefiaihihaomegaok)**
+- 📥 **Installing our [Chrome Extension](https://chromewebstore.google.com/detail/flowkey-bookmark-layout-m/lpgjlhajnhhdbaleigdkeloeeniedpnj)**
 - 🤝 **Contributing to the project**
 
 **Made with ❤️ by the FlowKey Team**
 
-[Website](https://flowkey.sh) • [Extension](https://chromewebstore.google.com/detail/flwkey/gnoldbjnnjpmomkeefiaihihaomegaok) • [Twitter](https://x.com/flowkeydotsh) • [Contact](mailto: hello@flowkey.sh)
+[Website](https://flowkey.sh) • [Extension](https://chromewebstore.google.com/detail/flowkey-bookmark-layout-m/lpgjlhajnhhdbaleigdkeloeeniedpnj) • [Twitter](https://x.com/flowkeydotsh) • [Contact](mailto: hello@flowkey.sh)
 
 </div>
