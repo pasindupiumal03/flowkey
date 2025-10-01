@@ -27,6 +27,39 @@ const Header = () => {
       }, 100);
     }
   };
+
+  const handleExtensionClick = () => {
+    // FlowKey extension ID
+    const extensionId = 'lpgjlhajnhhdbaleigdkeloeeniedpnj';
+    const chromeWebStoreUrl = `https://chromewebstore.google.com/detail/flowkey-bookmark-layout-m/${extensionId}`;
+    
+    // Check if running in Chrome browser
+    if (window.chrome && window.chrome.runtime) {
+      // Try to detect if extension is installed by attempting communication
+      window.chrome.runtime.sendMessage(extensionId, { ping: true }, (response) => {
+        if (window.chrome.runtime.lastError || !response) {
+          // Extension not installed - redirect to Chrome Web Store
+          window.open(chromeWebStoreUrl, '_blank');
+        } else {
+          // Extension is installed - open the extension
+          // Try multiple methods to open the extension
+          
+          // Method 1: Open extension popup page
+          window.open(`chrome-extension://${extensionId}/popup.html`, '_blank');
+          
+          // Method 2: Try to trigger extension action (if supported)
+          try {
+            window.chrome.runtime.sendMessage(extensionId, { action: 'open' });
+          } catch (e) {
+            console.log('Extension opened via popup URL');
+          }
+        }
+      });
+    } else {
+      // Not Chrome browser or chrome APIs not available - redirect to download page
+      window.open(chromeWebStoreUrl, '_blank');
+    }
+  };
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass-effect">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -81,7 +114,7 @@ const Header = () => {
           {/* Open Extension Button */}
           <Button 
             className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-6 py-2 rounded-full btn-glow transition-all duration-300 flex items-center space-x-2"
-            onClick={() => window.open('https://chromewebstore.google.com/detail/flowkey-bookmark-layout-m/lpgjlhajnhhdbaleigdkeloeeniedpnj', '_blank')}
+            onClick={handleExtensionClick}
           >
             <ExternalLink className="w-4 h-4" />
             <span>Open Extension</span>
